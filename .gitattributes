@@ -1,8 +1,3 @@
 # Auto detect text files and perform LF normalization
 * text=auto
 *.lua linguist-detectable=true
-*.dds linguist-detectable=false
-*.ma linguist-detectable=false
-*.xml linguist-detectable=false
-*.i3d linguist-detectable=false
-*.i3d.shapes linguist-detectable=false
