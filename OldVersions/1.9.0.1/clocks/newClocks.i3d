@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="untitled" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.2.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="clock_diffuse.dds"/>
+    <File fileId="2" filename="clock_normal.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="clockworks" materialId="4" specularColor="0.54902 1 1">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+    <Material name="clockworksEmissive" materialId="39" specularColor="1 1 1">
+      <Emissivemap fileId="1"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="newClocks.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="clockOldBody" static="true" clipDistance="400" nodeId="14" materialIds="4" castsShadows="true" receiveShadows="true">
+      <TransformGroup name="transform" rotation="0 180 0" nodeId="15">
+        <Shape shapeId="2" name="counterOldHour" translation="0 0 -0.208" nodeId="16" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="counterOldMinute" translation="0 0 -0.208" nodeId="17" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="transform" nodeId="18">
+        <Shape shapeId="2" name="counterOldHour" translation="0 0 -0.208" nodeId="19" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="counterOldMinute" translation="0 0 -0.208" nodeId="20" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <Shape shapeId="4" name="clockDoubleEmissive" visibility="false" nodeId="43" materialIds="39" castsShadows="true" receiveShadows="true"/>
+    </Shape>
+    <Shape shapeId="5" name="clockBody" translation="2.89464 0 0" static="true" clipDistance="400" nodeId="21" materialIds="4" castsShadows="true" receiveShadows="true">
+      <TransformGroup name="transform" rotation="0 180 0" nodeId="22">
+        <Shape shapeId="6" name="counterNewHour" translation="0 0 -0.208" nodeId="23" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="7" name="counterNewMinute" translation="0 0 -0.208" nodeId="24" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="8" name="counterNewSeconds" translation="0 0 -0.208" nodeId="25" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="transform" nodeId="26">
+        <Shape shapeId="6" name="counterNewHour" translation="0 0 -0.208" nodeId="27" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="7" name="counterNewMinute" translation="0 0 -0.208" nodeId="28" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="8" name="counterNewSeconds" translation="0 0 -0.208" nodeId="29" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <Shape shapeId="4" name="clockDoubleEmissive" visibility="false" nodeId="45" materialIds="39" castsShadows="true" receiveShadows="true"/>
+    </Shape>
+    <Shape shapeId="9" name="clockBody2" translation="-2.61395 0 0" static="true" clipDistance="400" nodeId="30" materialIds="4" castsShadows="true" receiveShadows="true">
+      <TransformGroup name="transform" rotation="0 180 0" nodeId="31">
+        <Shape shapeId="6" name="counterNewHour" translation="0 0 -0.143" nodeId="32" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="7" name="counterNewMinute" translation="0 0 -0.143" nodeId="33" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="8" name="counterNewSeconds" translation="0 0 -0.143" nodeId="34" materialIds="4" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <Shape shapeId="10" name="clockEmissive" translation="0 0 -0.065794" visibility="false" nodeId="44" materialIds="39" castsShadows="true" receiveShadows="true"/>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="15">
+      <Attribute name="hourPointer" type="string" value="0"/>
+      <Attribute name="minutePointer" type="string" value="1"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.animatedClock"/>
+      <Attribute name="pointerSteps" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="18">
+      <Attribute name="hourPointer" type="string" value="0"/>
+      <Attribute name="minutePointer" type="string" value="1"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.animatedClock"/>
+      <Attribute name="pointerSteps" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="43">
+      <Attribute name="onCreate" type="scriptCallback" value="Nightlight2.onCreate"/>
+    </UserAttribute>
+    <UserAttribute nodeId="22">
+      <Attribute name="hourPointer" type="string" value="0"/>
+      <Attribute name="minutePointer" type="string" value="1"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.animatedClock"/>
+      <Attribute name="pointerSteps" type="boolean" value="false"/>
+      <Attribute name="realTime" type="boolean" value="true"/>
+      <Attribute name="secondPointer" type="string" value="2"/>
+    </UserAttribute>
+    <UserAttribute nodeId="26">
+      <Attribute name="hourPointer" type="string" value="0"/>
+      <Attribute name="minutePointer" type="string" value="1"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.animatedClock"/>
+      <Attribute name="pointerSteps" type="boolean" value="true"/>
+      <Attribute name="realTime" type="boolean" value="true"/>
+      <Attribute name="secondPointer" type="string" value="2"/>
+    </UserAttribute>
+    <UserAttribute nodeId="45">
+      <Attribute name="onCreate" type="scriptCallback" value="Nightlight2.onCreate"/>
+    </UserAttribute>
+    <UserAttribute nodeId="31">
+      <Attribute name="hourPointer" type="string" value="0"/>
+      <Attribute name="minutePointer" type="string" value="1"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.animatedClock"/>
+      <Attribute name="pointerSteps" type="boolean" value="false"/>
+      <Attribute name="secondPointer" type="string" value="2"/>
+    </UserAttribute>
+    <UserAttribute nodeId="44">
+      <Attribute name="onCreate" type="scriptCallback" value="Nightlight2.onCreate"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>
