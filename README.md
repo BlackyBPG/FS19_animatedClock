@@ -1,5 +1,5 @@
 # FS19_animatedClock
-![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_animatedClock/blob/master/logo_animatedClock.png "Animated Clock Logo")
+![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_animatedClock/blob/master/mod_animatedClock.png "Animated Clock Logo")
  
  Das Script animierte Uhr (animatedClock) ist ein kleines nichtsynchronisertes Addon für Kartenbauer.
 Es kann nicht ohne direkten Einbau in eine Karte genutzt werden.
@@ -64,18 +64,18 @@ Bei Digitalanzeigen gibt es NUR die Möglichkeit 4 oder 6 Zahlen darzustellen, al
 
 ------------
 
-![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_Nightlight3/blob/master/animatedClock_01.png "AnimatedClock")
-![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_Nightlight3/blob/master/animatedClock_02.png "AnimatedClock")
-![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_Nightlight3/blob/master/animatedClock_03.png "AnimatedClock")
-![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_Nightlight3/blob/master/animatedClock_04.png "AnimatedClock")
-![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_Nightlight3/blob/master/animatedClock_05.png "AnimatedClock")
-![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_Nightlight3/blob/master/animatedClock_06.png "AnimatedClock")
-![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_Nightlight3/blob/master/animatedClock_07.png "AnimatedClock")
-![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_Nightlight3/blob/master/animatedClock_08.png "AnimatedClock")
-![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_Nightlight3/blob/master/animatedClock_09.png "AnimatedClock")
-![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_Nightlight3/blob/master/animatedClock_10.png "AnimatedClock")
-![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_Nightlight3/blob/master/animatedClock_11.png "AnimatedClock")
-![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_Nightlight3/blob/master/animatedClock_12.png "AnimatedClock")
+![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_animatedClock/blob/master/animatedClock_01.png "AnimatedClock")
+![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_animatedClock/blob/master/animatedClock_02.png "AnimatedClock")
+![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_animatedClock/blob/master/animatedClock_03.png "AnimatedClock")
+![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_animatedClock/blob/master/animatedClock_04.png "AnimatedClock")
+![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_animatedClock/blob/master/animatedClock_05.png "AnimatedClock")
+![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_animatedClock/blob/master/animatedClock_06.png "AnimatedClock")
+![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_animatedClock/blob/master/animatedClock_07.png "AnimatedClock")
+![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_animatedClock/blob/master/animatedClock_08.png "AnimatedClock")
+![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_animatedClock/blob/master/animatedClock_09.png "AnimatedClock")
+![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_animatedClock/blob/master/animatedClock_10.png "AnimatedClock")
+![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_animatedClock/blob/master/animatedClock_11.png "AnimatedClock")
+![AnimatedClock Ingame](https://github.com/BlackyBPG/FS19_animatedClock/blob/master/animatedClock_12.png "AnimatedClock")
 
 ------------
 
