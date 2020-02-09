@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="animatedClocks" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="8.2.0"/>
+  </Asset>
+
+  <Files>
+    <File fileId="1" filename="clock_diffuse.dds"/>
+    <File fileId="2" filename="clock_normal.dds"/>
+    <File fileId="5" filename="numberShaderEx.xml"/>
+    <File fileId="4" filename="numbers_diffuse.dds"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="numbers" materialId="4" specularColor="0.494118 1 1" customShaderId="5">
+      <Emissivemap fileId="4"/>
+      <CustomParameter name="number" value="8 0 0 0"/>
+      <CustomParameter name="numberColor" value="1 1 1 1"/>
+    </Material>
+    <Material name="numbers" materialId="5" specularColor="0.494118 1 1" customShaderId="5">
+      <Emissivemap fileId="4"/>
+      <CustomParameter name="number" value="10 0 0 0"/>
+      <CustomParameter name="numberColor" value="1 1 1 1"/>
+    </Material>
+    <Material name="numbers" materialId="6" specularColor="0.494118 1 1" customShaderId="5">
+      <Emissivemap fileId="4"/>
+      <CustomParameter name="number" value="8 0 0 0"/>
+      <CustomParameter name="numberColor" value="0 1 1 1"/>
+    </Material>
+    <Material name="numbers" materialId="7" specularColor="0.494118 1 1" customShaderId="5">
+      <Emissivemap fileId="4"/>
+      <CustomParameter name="number" value="10 0 0 0"/>
+      <CustomParameter name="numberColor" value="0 1 1 1"/>
+    </Material>
+    <Material name="clockworks" materialId="8" specularColor="0.494118 1 1">
+      <Texture fileId="1"/>
+      <Normalmap fileId="2"/>
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="displays.i3d.shapes">
+  </Shapes>
+
+
+  <Dynamics>
+  </Dynamics>
+
+  <Scene>
+    <Shape shapeId="1" name="display" translation="-1.49579 0 0" static="true" clipDistance="400" nodeId="14" materialIds="8" castsShadows="true" receiveShadows="true">
+      <TransformGroup name="digits" nodeId="15">
+        <Shape shapeId="2" name="displayDigit" translation="0.49 0 0.052" static="true" nodeId="16" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="displayDigit" translation="0.35 0 0.052" static="true" nodeId="17" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="displayDigit" translation="0.07 0 0.052" static="true" nodeId="18" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="displayDigit" translation="-0.07 0 0.052" static="true" nodeId="19" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="displayDigit" translation="-0.35 0 0.052" static="true" nodeId="20" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="displayDigit" translation="-0.49 0 0.052" static="true" nodeId="21" materialIds="6" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="transform" nodeId="22">
+        <Shape shapeId="2" name="displayDigit" translation="0.21 0 0.052" static="true" nodeId="23" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="2" name="displayDigit" translation="-0.21 0 0.052" static="true" nodeId="24" materialIds="7" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="nightLight" visibility="false" nodeId="25">
+        <Light name="light" translation="0 0 0.257" nodeId="26" type="point" color="0.25 0.5 1" emitDiffuse="true" emitSpecular="true" decayRate="4" range="0.5"/>
+        <Light name="light" translation="0.40158 0 0.256675" nodeId="27" type="point" color="0.25 0.5 1" emitDiffuse="true" emitSpecular="true" decayRate="4" range="0.5"/>
+        <Light name="light" translation="-0.402 0 0.256675" nodeId="28" type="point" color="0.25 0.5 1" emitDiffuse="true" emitSpecular="true" decayRate="4" range="0.5"/>
+      </TransformGroup>
+    </Shape>
+    <Shape shapeId="1" name="displayDigital" static="true" clipDistance="400" nodeId="29" materialIds="8" castsShadows="true" receiveShadows="true">
+      <TransformGroup name="digits" nodeId="30">
+        <Shape shapeId="3" name="displayDigitNew" translation="0.49 0 0.052" static="true" nodeId="31" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="displayDigitNew" translation="0.35 0 0.052" static="true" nodeId="32" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="displayDigitNew" translation="0.07 0 0.052" static="true" nodeId="33" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="displayDigitNew" translation="-0.07 0 0.052" static="true" nodeId="34" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="displayDigitNew" translation="-0.35 0 0.052" static="true" nodeId="35" materialIds="6" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="displayDigitNew" translation="-0.49 0 0.052" static="true" nodeId="36" materialIds="6" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="transform" nodeId="37">
+        <Shape shapeId="3" name="displayDigitNew" translation="0.21 0 0.052" static="true" nodeId="38" materialIds="7" castsShadows="true" receiveShadows="true"/>
+        <Shape shapeId="3" name="displayDigitNew" translation="-0.21 0 0.052" static="true" nodeId="39" materialIds="7" castsShadows="true" receiveShadows="true"/>
+      </TransformGroup>
+      <TransformGroup name="nightLight" visibility="false" nodeId="40">
+        <Light name="light" translation="0 0 0.257" nodeId="41" type="point" color="0.25 0.5 1" emitDiffuse="true" emitSpecular="true" decayRate="4" range="0.5"/>
+        <Light name="light" translation="0.402 0 0.256675" nodeId="42" type="point" color="0.25 0.5 1" emitDiffuse="true" emitSpecular="true" decayRate="4" range="0.5"/>
+        <Light name="light" translation="-0.402 0 0.256675" nodeId="43" type="point" color="0.25 0.5 1" emitDiffuse="true" emitSpecular="true" decayRate="4" range="0.5"/>
+      </TransformGroup>
+    </Shape>
+    <Shape shapeId="4" name="displayDoubleDigital" translation="1.31303 0 0" static="true" clipDistance="400" nodeId="44" materialIds="8" castsShadows="true" receiveShadows="true">
+      <TransformGroup name="inGame" translation="0 0.127664 0" nodeId="45">
+        <TransformGroup name="digits" nodeId="46">
+          <Shape shapeId="3" name="displayDigitNew" translation="0.49 0 0.052" static="true" nodeId="47" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="displayDigitNew" translation="0.35 0 0.052" static="true" nodeId="48" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="displayDigitNew" translation="0.07 0 0.052" static="true" nodeId="49" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="displayDigitNew" translation="-0.07 0 0.052" static="true" nodeId="50" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="displayDigitNew" translation="-0.35 0 0.052" static="true" nodeId="51" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="displayDigitNew" translation="-0.49 0 0.052" static="true" nodeId="52" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="transform" nodeId="53">
+          <Shape shapeId="3" name="displayDigitNew" translation="0.21 0 0.052" static="true" nodeId="54" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="displayDigitNew" translation="-0.21 0 0.052" static="true" nodeId="55" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="real" translation="0 -0.0952376 0" nodeId="56">
+        <TransformGroup name="digits" nodeId="57">
+          <Shape shapeId="3" name="displayDigitNew" translation="0.49 0 0.052" static="true" nodeId="58" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="displayDigitNew" translation="0.35 0 0.052" static="true" nodeId="59" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="displayDigitNew" translation="0.07 0 0.052" static="true" nodeId="60" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="displayDigitNew" translation="-0.07 0 0.052" static="true" nodeId="61" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="displayDigitNew" translation="-0.35 0 0.052" static="true" nodeId="62" materialIds="4" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="displayDigitNew" translation="-0.49 0 0.052" static="true" nodeId="63" materialIds="4" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+        <TransformGroup name="transform" nodeId="64">
+          <Shape shapeId="3" name="displayDigitNew" translation="0.21 0 0.052" static="true" nodeId="65" materialIds="5" castsShadows="true" receiveShadows="true"/>
+          <Shape shapeId="3" name="displayDigitNew" translation="-0.21 0 0.052" static="true" nodeId="66" materialIds="5" castsShadows="true" receiveShadows="true"/>
+        </TransformGroup>
+      </TransformGroup>
+      <TransformGroup name="nightLight" visibility="false" nodeId="67">
+        <Light name="light" translation="0 0.1 0.257" nodeId="68" type="point" color="0.25 0.5 1" emitDiffuse="true" emitSpecular="true" decayRate="4" range="0.5"/>
+        <Light name="light" translation="0.402 0.1 0.256675" nodeId="69" type="point" color="0.25 0.5 1" emitDiffuse="true" emitSpecular="true" decayRate="4" range="0.5"/>
+        <Light name="light" translation="-0.402 0.1 0.256675" nodeId="70" type="point" color="0.25 0.5 1" emitDiffuse="true" emitSpecular="true" decayRate="4" range="0.5"/>
+        <Light name="light" translation="0 -0.1 0.257" nodeId="71" type="point" color="0.25 0.5 1" emitDiffuse="true" emitSpecular="true" decayRate="4" range="0.5"/>
+        <Light name="light" translation="0.402 -0.1 0.256675" nodeId="72" type="point" color="0.25 0.5 1" emitDiffuse="true" emitSpecular="true" decayRate="4" range="0.5"/>
+        <Light name="light" translation="-0.402 -0.1 0.256675" nodeId="73" type="point" color="0.25 0.5 1" emitDiffuse="true" emitSpecular="true" decayRate="4" range="0.5"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="14">
+      <Attribute name="digits" type="string" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.animatedClock"/>
+    </UserAttribute>
+    <UserAttribute nodeId="25">
+      <Attribute name="onCreate" type="scriptCallback" value="Nightlight2.onCreate"/>
+    </UserAttribute>
+    <UserAttribute nodeId="29">
+      <Attribute name="digits" type="string" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.animatedClock"/>
+    </UserAttribute>
+    <UserAttribute nodeId="40">
+      <Attribute name="onCreate" type="scriptCallback" value="Nightlight2.onCreate"/>
+    </UserAttribute>
+    <UserAttribute nodeId="45">
+      <Attribute name="digits" type="string" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.animatedClock"/>
+    </UserAttribute>
+    <UserAttribute nodeId="56">
+      <Attribute name="digits" type="string" value="0"/>
+      <Attribute name="onCreate" type="scriptCallback" value="modOnCreate.animatedClock"/>
+      <Attribute name="realTime" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="67">
+      <Attribute name="onCreate" type="scriptCallback" value="Nightlight2.onCreate"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>
